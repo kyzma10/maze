@@ -1,0 +1,65 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+#my_maze {
+  width: 70%;
+  margin: 50px auto;
+  border: 10px solid #f48942;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+}
+
+.cell {
+  height: 50px;
+  width: auto;
+  background-color: #f4e541;
+  border: .2px solid #343434;
+}
+
+.cell:first-child {
+  border-left: none;
+}
+
+.cell:last-child {
+  border-right: none;
+}
+
+.close {
+  background: #f4a641 url('img/lock.png') 50% 50% no-repeat;
+  background-size: contain;
+}
+
+.count {
+    margin: 20px auto;
+    width: 500px;
+}
+
+#answer {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  color: #f44250;
+  font-size: 22px;
+}
+
+button {
+  width: 200px;
+  padding: 10px 30px;
+  background-color: #42f4d7;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  border-radius: 7px;
+}
+
+#clear {
+  margin-left: 50px;
+}
+
+.path {
+  background: #f4a641 url('img/smile.png') 50% 50% no-repeat;
+  background-size: contain;
+}
